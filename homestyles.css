@@ -1,0 +1,187 @@
+
+body {
+	 background: url("portfolioAssets/concrete_seamless.png");
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+h2 {
+	margin: auto;
+	font-family: 'Merriweather', serif;
+	font-size: 1.2em;
+}
+
+h3 {
+	margin: auto;
+	font-family: 'Merriweather', serif;
+	font-size: 1.1em;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.app p {
+    font-size: 0.7em;
+	font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+	width: 100%;
+    min-width: 1000px;
+	height: 430px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.container {
+    width: 100%;
+    min-width: 1000px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bio, .contact {
+    display: flex;
+	width: 300px;
+    min-width: 300px;
+	height: 15%;
+	padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    background-color: skyblue;
+    color: black;
+}
+
+.bio p, .contact p {
+	font-size: 1em;
+	line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.pic {
+    height: 370px;
+    width: 284px;
+    margin: auto;
+}
+
+.profilepic {
+    background-image: url(portfolioAssets/profilepic.jpg);
+    background-size: 243px 264px;
+    background-repeat: no-repeat;
+    height: 264px;
+    width: 243px;
+    border: 9px solid black;
+    border-radius: 150px;
+    margin: 0 auto 20px auto;
+}
+
+
+.headline {
+	width: 280px;
+	height: 55px;
+	margin: 0 auto 20px auto;
+	line-height: 0.8;
+    border: 3px solid black;
+    background-color: sandybrown;
+    text-align: center;
+    padding-top:15px;
+}
+
+.headline p {
+	font-size: 0.7em;
+	font-style: italic;
+    font-weight: 700;
+}
+
+
+.techTitle {
+	width: 200px;
+	height: 50px;
+	display: flex;
+	text-align: center;
+    margin: 30px auto;
+	border: 2px solid black;
+    background-color: sandybrown;
+}
+
+.appRow {
+    display: flex;
+	width: 100%;
+    min-width: 1300px;
+	height: 350px;
+	margin-bottom: 75px;
+}
+
+.app {
+	width: 406px;
+	height: 400px;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+
+
+.app:hover .appLink {
+    -webkit-box-shadow: 2px 2px 5px 5px rgba(137,37,37,1);
+    -moz-box-shadow: 2px 2px 5px 5px rgba(137,37,37,1);
+    box-shadow: 2px 2px 5px 5px rgba(137,37,37,1);
+    border: 2px solid black;
+
+}
+
+
+.appTitle {
+	width: 320px;
+	height: 40px;
+    margin: 0 auto 20px auto;
+	display: flex;
+}
+
+
+.appLink {
+    border-radius: 5px;
+	width: 400px;
+	height: 200px;
+	margin: 0 auto 20px auto;
+	border: 2px solid brown;
+    -webkit-box-shadow: 2px 2px 5px 5px rgba(165,42,42,0.75);
+    -moz-box-shadow: 2px 2px 5px 5px rgba(165,42,42,0.75);
+    box-shadow: 2px 2px 5px 5px rgba(165,42,42,0.75);
+}
+
+
+.appInfo {
+	padding-top: 5px;
+	width: 320px;
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+
+
+
+
+
+	
