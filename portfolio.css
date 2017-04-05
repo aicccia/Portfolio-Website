@@ -1,0 +1,235 @@
+body {
+    display: flex;
+    background-color: lightblue;
+    box-sizing: border-box;
+    font-family: Consolas, "Lucida Console", monospace;
+    font-size: 12px;
+}
+
+.portfolioContainer {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+
+/*=================================
+Bio Styles
+==================================*/
+
+main {
+    position: fixed;
+    height: 850px;
+    width: 620px;
+    box-shadow: 10px 10px 20px grey;
+    background-color: hsl(0, 0%, 90%);
+    padding: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 20px;
+}
+
+.bio {
+    padding: 30px 30px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.bio-pic img {
+    width: 270px;
+    border: 5px solid lightgrey;
+
+}
+
+.contactContainer {
+    margin: 50px 0 0 20px;
+}
+.bio-contact {
+    padding: 20px;
+    width: 220px;
+    height: 100px;
+    text-align: left;
+    background-color: lightgray;
+}
+
+.codingSkillsContainer h3,
+.contactContainer h3,
+.bio-textContainer h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.codingSkillsContainer {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.codingSkills {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgrey;
+    padding: 30px 0;
+}
+
+.codingSkills p {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.codingSkills img {
+    width: 75px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.bio-textContainer {
+    margin: 25px auto;
+    width: 550px;
+}
+
+.bio-text {
+    background-color: lightgray;
+    padding: 35px;
+    margin: 0 25px 25px 25px;
+}
+
+
+
+/*=================================
+Menu Styles
+===================================*/
+.menu {
+    width: 200px;
+    background-color: hsl(0, 0%, 90%);
+    text-align: center;
+    position: fixed;
+    margin-left: 700px;
+    top: 50%;
+    transform: translate(0, -50%);
+    box-shadow: 10px 10px 20px grey;
+    padding: 20px 10px;
+}
+
+.menu h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px 20px 10px;
+    color: black;
+}
+
+.menu h3 {
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
+.menu ul {
+    font-family: Garamond, "Times New Roman";
+    text-align: left;
+    margin: 15px 0;
+}
+
+.menu li {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover, .menu ul:hover, .menu:hover h2 {
+    color: #bb7200;
+    transition: color 0.1s;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*=================================
+Portfolio Styles
+==================================*/
+
+.portfolio {
+    width: 780px;
+    height: 100%;
+    margin-left: 920px;
+    padding-top: 25px;
+}
+
+.project {
+    width: 700px;
+    height: 350px;
+    background-color: hsl(0, 0%, 90%);
+    border: 1px solid transparent;
+    margin: 0 auto 50px auto;
+    box-shadow: 10px 10px 20px grey;
+}
+
+.project h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top:10px;
+}
+.pic {
+    height: 250px;
+    width: 250px;
+    margin: 25px 0 0 25px;
+    float: left;
+    background-color: lightgray;
+}
+
+.description {
+    height: 250px;
+    width: 360px;
+    margin: 25px 0 10px 300px;
+    background-color: lightgray;
+}
+
+/*======================================
+Media Queries
+ ====================================*/
+
+@media screen  and (max-width: 1600px) {
+    .menu
+        { display: none; }
+    .portfolio {
+        margin-left: 650px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .portfolioContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main {
+        width: 680px;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+        position: static;
+    }
+
+    .portfolio {
+        margin: 0 auto;
+    }
+
+}
+
+
+
+
+

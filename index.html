@@ -1,94 +1,162 @@
 <!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width,initial-scale=1">
-			<title>J. Nicholas Engleman's Portfolio</title>
-			<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-			<link rel="stylesheet" href="cssreset.css">
-			<link rel="stylesheet" href="portfoliostyles.css">
-			<link rel="stylesheet" href="homestyles.css">
-		</head>
-		<body>
-			<nav>
-				<ul>
-					<li><a href="#top"><p>Bio</p></a></li>
-					<li><a href="#top"><p>Hire/Contact Me</p></a></li>
-					<li><a href="#javascript"><p>Javascript Apps</p></a></li>
-				</ul>
-			</nav>
+<html lang="en">
 
-			<div class="profile" id="top">
-				<div class="bio">
-					<p>2016 gradute of Columbia University<br>
-						5 years as Naval Aviation Logistics Specialist
-					</p>
-				</div>
-				<div class="pic">
-					<div class="profilepic"></div>
-					<div class="headline">
-						<h1>J. Nicholas Engleman</h 1><br>
-						<p>~ updated: July 15th, 2016 ~</p>
-					</div>
-				</div>
-				<div class="contact">
-					<p><a href="https://github.com/aicccia">My GitHub</a><br>
-					<a href="https://www.linkedin.com/in/johnengleman">My LinkedIn</a><br>
-					nicholas@englemaninvest.com<br>
-						646-752-8204</p>
+<head>
+	<meta charset="utf-8">
+	<title>Nicholas Engleman's Portfolio</title>
+	<link rel="stylesheet" href="cssreset.css">
+	<link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+<div class="portfolioContainer">
+	<main>
+		<div class="bio">
+			<div class="bio-pic"><img src="web-profile-pic.jpg"></div>
+			<div class="contactContainer">
+				<h3>Contact</h3>
+				<div class="bio-contact">
+
+					<ul>
+						<li>
+							<phone>678-927-3308</phone>
+						</li>
+						<li>
+							<email>nicholas@englemaninvest.com</email>
+						</li>
+						<li><a href="https://www.linkedin.com/in/johnengleman/">My LinkedIn</a></li>
+						<li><a href="https://github.com/aicccia">My Github</a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="container">
-				<div class="techTitle" id="javascript"><h2>Javascript Apps</h2></div>
-				<div class="appRow">
-					<a href="Top-10-GOT-Quotes/got.html">
-						<div class="app">
-							<div class="appTitle"><h3>Top 10 Game of Thrones Quotes App</h3></div>
-							<div class="appLink"><img src="portfolioAssets/game.png" height="200" width="400"/></div>
-							<div class="appInfo">
-								<p>last Commit: July 15th, 2015</p><br>
-								<a href="https://github.com/aicccia/Top-10-GOT-Quotes"><p>see code on GitHub<p></p></a>
-								<a href="#"><p>see code on CodePen</p></a></div>
-						</div>
-					</a>
-					<a href="Local-Weather-App/weather.html">
-						<div class="app">
-							<div class="appTitle"><h3>Weather App</h3></div>
-							<div class="appLink"><img src="portfolioAssets/weatherpreview.jpg" height="200" width="400"/></div>
-							<div class="appInfo">
-								<p>last Commit: July 15th, 2015</p><br>
-								<a href="https://github.com/aicccia/Local-Weather-App"><p>see code on GitHub</p></a>
-								<a href="#"><p>see code on CodePen</p></a>
-							</div>
-						</div>
-					</a>
-					<a href="Wikipedia-Viewer/wikipedia_viewer.html">
-						<div class="app">
-							<div class="appTitle"><h3>Wikipedia Viewer</h3></div>
-							<div class="appLink"><img src="portfolioAssets/wikipreview.png" height="200" width="400"/></div>
-							<div class="appInfo">
-								<p>last Commit: July 18th, 2015</p><br>
-								<a href="https://github.com/aicccia/Wikipedia-Viewer"><p>see code on GitHub</p></a>
-								<a href="#"><p>see code on CodePen</p></a>
-							</div>
-						</div>
-					</a>
+			<div class="bio-textContainer">
+				<h3>About Me</h3>
+				<div class="bio-text"><p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+					doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+					architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+					aspernatur
+					aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+					Neque
+					porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+					numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 				</div>
-
-				<div class="appRow">
-					<a href="Twtich.tv-/twitch.html">
-						<div class="app">
-							<div class="appTitle"><h3>Twitch Channel Status App</h3></div>
-							<div class="appLink"><img src="portfolioAssets/twitchpreview.png" height="200" width="400"/></div>
-							<div class="appInfo">
-								<p>last Commit: July 26th, 2015</p><br>
-								<a href="https://github.com/aicccia/Twtich.tv-"><p>see code on GitHub</p></a>
-								<a href="#"><p>see code on CodePen</p></a></div>
-						</div>
-					</a>
-				</div>
-
 			</div>
+			<div class="codingSkillsContainer">
+				<h3>Coding Skills</h3>
+				<div class="codingSkills">
+					<picture><img src="html-icon.png">
+						<p>HTML5</p></picture>
+					<picture><img src="css-icon.png">
+						<p>CSS3</p></picture>
+					<picture><img src="javascript-icon.png">
+						<p>Javascript</p></picture>
 
-		</body>
+				</div>
+			</div>
+	</main>
+
+	<div class="menu" id="menu">
+		<h2>Projects</h2>
+		<ul>
+			<h3>HTML5/CSS3 Demos</h3>
+			<li><a href="#tribute-page">Tribute Page</a></li>
+			<li><a href="#product-landing-page">Product Landing Page</a></li>
+			<li><a href="#survey-form">Survey Form</a></li>
+			<li><a href="#technical-documentation-page">Technical Documentation Page</a></li>
+			<li><a href="#cnn-homepage">CNN Homepage</a></li>
+			<li><a href="#facebook-homepage">Facebook Homepage</a></li>
+		</ul>
+		<ul>
+			<h3>JSON Apps</h3>
+			<li><a href="#local-weather-viewer">Local Weather Viewer</a></li>
+			<li><a href="#top-10-game-of-thrones-quotes">Top 10 Game of Thrones Quotes</a></li>
+			<li><a href="#twitch-tv-channel-filters">Twitch TV Channel Filter</a></li>
+			<li><a href="#wikipedia-article-finder">Wikipedia Article Finder</a></li>
+		</ul>
+		<ul>
+			<h3>Javascript Apps</h3>
+			<li><a href="#todo-app-with-filtering">Todo App with Filtering</a></li>
+			<li><a href="#scientific-calculator-with-history">Scientific Calculator with History</a></li>
+		</ul>
+
+	</div>
+
+	<div class="portfolio">
+		<div class="project" id="tribute-page">
+			<h2>Tribute Page</h2>
+			<div class="pic"><img src="tribute-page-pic.jpg"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="product-landing-page">
+			<h2>Product Landing Page</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="survey-form">
+			<h2>Survey Form</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="technical-documentation-page">
+			<h2>Technical Documentation Page</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="cnn-homepage">
+			<h2>CNN Homepage</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="facebook-homepage">
+			<h2>Facebook Homepage</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="local-weather-viewer">
+			<h2>Local Weather Viewer</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="top-10-game-of-thrones-quotes">
+			<h2>Top 10 Game of Thrones Quotes</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="twitch-tv-channel-filters">
+			<h2>Twitch TV Channel Filter</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="wikipedia-article-finder">
+			<h2>Wikipedia Article Finder</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="todo-app-with-filtering">
+			<h2>Todo App with Filtering</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+		<div class="project" id="scientific-calculator-with-history">
+			<h2>Scientific Calculator with History</h2>
+			<div class="pic"></div>
+			<div class="description"></div>
+			<div class="links"></div>
+		</div>
+	</div>
+</div>
+</body>
+
 </html>
