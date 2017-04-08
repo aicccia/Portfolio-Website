@@ -1,14 +1,21 @@
 body {
     display: flex;
-    background-color: lightblue;
     box-sizing: border-box;
     font-family: Consolas, "Lucida Console", monospace;
     font-size: 12px;
+    background: lightblue url("Atlanta-Pic.jpg") no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    height: 100%;
 }
 
 .portfolioContainer {
     width: 1600px;
     margin: 0 auto;
+}
+
+ div, img {
+    border-radius: 5px;
 }
 
 
@@ -18,15 +25,17 @@ Bio Styles
 
 main {
     position: fixed;
-    height: 850px;
+    height: 890px;
     width: 620px;
-    box-shadow: 10px 10px 20px grey;
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(171,100%,45%);
+    border: 2px solid grey;
     padding: 10px;
     top: 50%;
     transform: translate(0, -50%);
     margin-left: 20px;
+    border-radius: 5px;
 }
+
 
 .bio {
     padding: 30px 30px 0 30px;
@@ -36,20 +45,23 @@ main {
 
 
 .bio-pic img {
-    width: 270px;
-    border: 5px solid lightgrey;
-
+    width: 250px;
+    border: 2px solid white;
+    margin-left: 20px;
+    border-radius: 15%;
 }
 
 .contactContainer {
-    margin: 50px 0 0 20px;
+    margin: 20px 0 0 40px;
 }
 .bio-contact {
     padding: 20px;
-    width: 220px;
-    height: 100px;
-    text-align: left;
-    background-color: lightgray;
+    width: 200px;
+    height: auto;
+    background-color: hsl(0, 0%, 84%);
+    border-radius: 5px;
+    border: 2px solid white;
+    text-align: center;
 }
 
 .codingSkillsContainer h3,
@@ -58,11 +70,13 @@ main {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 .codingSkillsContainer {
     margin: 0 auto;
-    width: 500px;
+    width: 530px;
 }
 
 .codingSkills {
@@ -70,6 +84,8 @@ main {
     justify-content: space-around;
     background-color: lightgrey;
     padding: 30px 0;
+    border-radius: 5px;
+    border: 2px solid white;
 }
 
 .codingSkills p {
@@ -89,13 +105,13 @@ li {
 
 .bio-textContainer {
     margin: 25px auto;
-    width: 550px;
 }
 
 .bio-text {
     background-color: lightgray;
     padding: 35px;
-    margin: 0 25px 25px 25px;
+    border: 2px solid white;
+    width: 530px;
 }
 
 
@@ -103,41 +119,41 @@ li {
 /*=================================
 Menu Styles
 ===================================*/
-.menu {
-    width: 200px;
-    background-color: hsl(0, 0%, 90%);
-    text-align: center;
+#menuSpy {
+    width: 250px;
+    background-color: hsl(171,100%,45%);
     position: fixed;
-    margin-left: 700px;
+    margin-left: 670px;
     top: 50%;
     transform: translate(0, -50%);
-    box-shadow: 10px 10px 20px grey;
-    padding: 20px 10px;
+    border: 2px solid grey;
 }
+
 
 .menu h2 {
     font-size: 20px;
     font-weight: 600;
-    padding: 0 10px 20px 10px;
     color: black;
+    text-align: center;
 }
 
 .menu h3 {
     font-size: 15px;
     font-weight: 700;
     text-decoration: underline;
-    padding-bottom: 5px;
+    text-align: center;
 }
 
 .menu ul {
     font-family: Garamond, "Times New Roman";
     text-align: left;
-    margin: 15px 0;
 }
 
 .menu li {
     font-weight: 400;
     cursor: pointer;
+    height: 30px;
+
 }
 
 .menu a {
@@ -145,13 +161,9 @@ Menu Styles
     color: black;
 }
 
-.menu a:hover, .menu ul:hover, .menu:hover h2 {
+.menu a:hover, .menu ul:hover {
     color: #bb7200;
     transition: color 0.1s;
-}
-
-.menu a:hover {
-    text-decoration: underline;
 }
 
 
@@ -162,7 +174,7 @@ Portfolio Styles
 
 .portfolio {
     width: 780px;
-    height: 100%;
+    height: 1000px;
     margin-left: 920px;
     padding-top: 25px;
 }
@@ -170,10 +182,9 @@ Portfolio Styles
 .project {
     width: 700px;
     height: 350px;
-    background-color: hsl(0, 0%, 90%);
-    border: 1px solid transparent;
+    background-color: hsl(171,100%,45%);
+    border: 2px solid grey;
     margin: 0 auto 50px auto;
-    box-shadow: 10px 10px 20px grey;
 }
 
 .project h2 {
@@ -183,11 +194,15 @@ Portfolio Styles
     margin-top:10px;
 }
 .pic {
+    margin: 15px 0 0 25px;
+    float: left;
+}
+
+.project img {
     height: 250px;
     width: 250px;
-    margin: 25px 0 0 25px;
-    float: left;
-    background-color: lightgray;
+    border: 2px solid white;
+    border-radius: 15%;
 }
 
 .description {
@@ -195,6 +210,7 @@ Portfolio Styles
     width: 360px;
     margin: 25px 0 10px 300px;
     background-color: lightgray;
+    border: 2px solid white;
 }
 
 /*======================================

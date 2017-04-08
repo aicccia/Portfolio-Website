@@ -2,161 +2,179 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Nicholas Engleman's Portfolio</title>
-	<link rel="stylesheet" href="cssreset.css">
-	<link rel="stylesheet" href="portfolio.css">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bob's Portfolio</title>
+    <link rel="stylesheet" href="cssreset.css">
 
-<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<body data-spy="scroll" data-target="#menuSpy" data-offset="200">
 
 <div class="portfolioContainer">
-	<main>
-		<div class="bio">
-			<div class="bio-pic"><img src="web-profile-pic.jpg"></div>
-			<div class="contactContainer">
-				<h3>Contact</h3>
-				<div class="bio-contact">
+    <main>
+        <div class="bio">
+            <div class="bio-pic"><img src="web-profile-pic.jpg"></div>
+            <div class="contactContainer">
+                <h3>Contact</h3>
+                <div class="bio-contact">
+                    <ul>
+                        <li><a href="">My LinkedIn</a></li>
+                        <li><a href="">My Github</a></li>
+                        <li data-toggle="tooltip" data-placement="top" title="email@email.com">My Email</li>
+                        <li data-toggle="tooltip" data-placement="top" title="###-###-####">My Phone Number</li>
+                        <li data-toggle="tooltip" data-placement="top" title="jk! haha">My SSN</li>
+                        <li data-toggle="tooltip" data-placement="top" title="Please do not contact me. Your IP has been recorded. You failed the test.">Picture of my dick</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bio-textContainer">
+                <h3>About Me</h3>
+                <div class="bio-text"><p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur
+                    aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    Neque
+                    porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+            </div>
+            <div class="codingSkillsContainer">
+                <h3>Coding Skills</h3>
+                <div class="codingSkills">
+                    <picture><img src="html-icon.png">
+                        <p>HTML5</p></picture>
+                    <picture><img src="css-icon.png">
+                        <p>CSS3</p></picture>
+                    <picture><img src="javascript-icon.png">
+                        <p>Javascript</p></picture>
 
-					<ul>
-						<li>
-							<phone>678-927-3308</phone>
-						</li>
-						<li>
-							<email>nicholas@englemaninvest.com</email>
-						</li>
-						<li><a href="https://www.linkedin.com/in/johnengleman/">My LinkedIn</a></li>
-						<li><a href="https://github.com/aicccia">My Github</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="bio-textContainer">
-				<h3>About Me</h3>
-				<div class="bio-text"><p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-					doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-					architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur
-					aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-					Neque
-					porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-					numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-				</div>
-			</div>
-			<div class="codingSkillsContainer">
-				<h3>Coding Skills</h3>
-				<div class="codingSkills">
-					<picture><img src="html-icon.png">
-						<p>HTML5</p></picture>
-					<picture><img src="css-icon.png">
-						<p>CSS3</p></picture>
-					<picture><img src="javascript-icon.png">
-						<p>Javascript</p></picture>
+                </div>
+            </div>
+        </div>
+    </main>
 
-				</div>
-			</div>
-	</main>
+    <div class="menu" id="menuSpy">
+        <h2>Projects</h2>
+        <h3>HTML5/CSS3 Demos</h3>
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#tribute-page">Tribute Page</a></li>
+            <li><a href="#product-landing-page">Product Landing Page</a></li>
+            <li><a href="#survey-form">Survey Form</a></li>
+            <li><a href="#technical-documentation-page">Technical Documentation
+                Page</a>
+            </li>
+            <li><a href="#cnn-homepage">CNN Homepage</a></li>
+            <li><a href="#facebook-homepage">Facebook Homepage</a></li>
+        </ul>
+        <h3>JSON Apps</h3>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#local-weather-viewer">Local Weather Viewer</a></li>
+            <li><a href="#top-10-game-of-thrones-quotes">Top 10 Game of Thrones
+                Quotes</a>
+            </li>
+            <li><a href="#twitch-tv-channel-filters">Twitch TV Channel Filter</a></li>
+            <li><a href="#wikipedia-article-finder">Wikipedia Article Finder</a></li>
+        </ul>
+        <h3>Javascript Apps</h3>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#todo-app-with-filtering">Todo App with Filtering</a></li>
+            <li><a href="#scientific-calculator-with-history">Scientific Calculator with
+                History</a></li>
+        </ul>
+    </div>
 
-	<div class="menu" id="menu">
-		<h2>Projects</h2>
-		<ul>
-			<h3>HTML5/CSS3 Demos</h3>
-			<li><a href="#tribute-page">Tribute Page</a></li>
-			<li><a href="#product-landing-page">Product Landing Page</a></li>
-			<li><a href="#survey-form">Survey Form</a></li>
-			<li><a href="#technical-documentation-page">Technical Documentation Page</a></li>
-			<li><a href="#cnn-homepage">CNN Homepage</a></li>
-			<li><a href="#facebook-homepage">Facebook Homepage</a></li>
-		</ul>
-		<ul>
-			<h3>JSON Apps</h3>
-			<li><a href="#local-weather-viewer">Local Weather Viewer</a></li>
-			<li><a href="#top-10-game-of-thrones-quotes">Top 10 Game of Thrones Quotes</a></li>
-			<li><a href="#twitch-tv-channel-filters">Twitch TV Channel Filter</a></li>
-			<li><a href="#wikipedia-article-finder">Wikipedia Article Finder</a></li>
-		</ul>
-		<ul>
-			<h3>Javascript Apps</h3>
-			<li><a href="#todo-app-with-filtering">Todo App with Filtering</a></li>
-			<li><a href="#scientific-calculator-with-history">Scientific Calculator with History</a></li>
-		</ul>
-
-	</div>
-
-	<div class="portfolio">
-		<div class="project" id="tribute-page">
-			<h2>Tribute Page</h2>
-			<div class="pic"><img src="tribute-page-pic.jpg"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="product-landing-page">
-			<h2>Product Landing Page</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="survey-form">
-			<h2>Survey Form</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="technical-documentation-page">
-			<h2>Technical Documentation Page</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="cnn-homepage">
-			<h2>CNN Homepage</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="facebook-homepage">
-			<h2>Facebook Homepage</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="local-weather-viewer">
-			<h2>Local Weather Viewer</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="top-10-game-of-thrones-quotes">
-			<h2>Top 10 Game of Thrones Quotes</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="twitch-tv-channel-filters">
-			<h2>Twitch TV Channel Filter</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="wikipedia-article-finder">
-			<h2>Wikipedia Article Finder</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="todo-app-with-filtering">
-			<h2>Todo App with Filtering</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-		<div class="project" id="scientific-calculator-with-history">
-			<h2>Scientific Calculator with History</h2>
-			<div class="pic"></div>
-			<div class="description"></div>
-			<div class="links"></div>
-		</div>
-	</div>
+    <div class="portfolio">
+        <div class="project" id="tribute-page">
+            <h2>Tribute Page</h2>
+            <div class="pic"><img src="tribute-page-pic.jpg"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="product-landing-page">
+            <h2>Product Landing Page</h2>
+            <div class="pic"><img src="product-landing-page-pic.jpg"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="survey-form">
+            <h2>Survey Form</h2>
+            <div class="pic"><img src="survey-form-pic.jpg"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="technical-documentation-page">
+            <h2>Technical Documentation Page</h2>
+            <div class="pic"><img src="technical-documentation-page-pic.jpg"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="cnn-homepage">
+            <h2>CNN Homepage</h2>
+            <div class="pic"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="facebook-homepage">
+            <h2>Facebook Homepage</h2>
+            <div class="pic"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="local-weather-viewer">
+            <h2>Local Weather Viewer</h2>
+            <div class="pic"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="top-10-game-of-thrones-quotes">
+            <h2>Top 10 Game of Thrones Quotes</h2>
+            <div class="pic"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project">
+            <h2>Twitch TV Channel Filter</h2>
+            <div class="pic"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="wikipedia-article-finder">
+            <h2>Wikipedia Article Finder</h2>
+            <div class="pic"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="todo-app-with-filtering">
+            <h2>Todo App with Filtering</h2>
+            <div class="pic"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+        <div class="project" id="scientific-calculator-with-history">
+            <h2>Scientific Calculator with History</h2>
+            <div class="pic"></div>
+            <div class="description"></div>
+            <div class="links"></div>
+        </div>
+    </div>
 </div>
+
+<script>
+    $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+
+
 </body>
 
 </html>
