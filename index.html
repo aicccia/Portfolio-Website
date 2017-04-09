@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bob's Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nicholas Engleman's Portfolio</title>
     <link rel="stylesheet" href="cssreset.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -22,44 +23,34 @@
 
 <div class="portfolioContainer">
     <main>
-        <div class="bio">
-            <div class="bio-pic"><img src="web-profile-pic.jpg"></div>
-            <div class="contactContainer">
-                <h3>Contact</h3>
-                <div class="bio-contact">
-                    <ul>
-                        <li><a href="">My LinkedIn</a></li>
-                        <li><a href="">My Github</a></li>
-                        <li data-toggle="tooltip" data-placement="top" title="email@email.com">My Email</li>
-                        <li data-toggle="tooltip" data-placement="top" title="###-###-####">My Phone Number</li>
-                        <li data-toggle="tooltip" data-placement="top" title="jk! haha">My SSN</li>
-                        <li data-toggle="tooltip" data-placement="top" title="Please do not contact me. Your IP has been recorded. You failed the test.">Picture of my dick</li>
-                    </ul>
-                </div>
+        <h1>Nicholas Engleman</h1>
+        <h2>Atlanta based Web Developer</h2>
+        <div class="bio-textContainer">
+            <h3>About Me</h3>
+            <div class="bio-text"><p>I am not a web designer and I am also colorblind so if the design of this portfolio "offends" you, or "has ruined your day", or "brought back bad memories", I sincerely apologize. </p>
+                <p>That was not my intention.</p>
             </div>
-            <div class="bio-textContainer">
-                <h3>About Me</h3>
-                <div class="bio-text"><p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                    aspernatur
-                    aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                    Neque
-                    porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-                    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                </div>
+        </div>
+        <div class="contactContainer">
+            <h3>Contact</h3>
+            <div class="bio-contact">
+                <ul>
+                    <li><a href="">My LinkedIn</a></li>
+                    <li><a href="">My Github</a></li>
+                    <li data-toggle="tooltip" data-placement="top" title="email@email.com">My Email</li>
+                </ul>
             </div>
-            <div class="codingSkillsContainer">
-                <h3>Coding Skills</h3>
-                <div class="codingSkills">
-                    <picture><img src="html-icon.png">
-                        <p>HTML5</p></picture>
-                    <picture><img src="css-icon.png">
-                        <p>CSS3</p></picture>
-                    <picture><img src="javascript-icon.png">
-                        <p>Javascript</p></picture>
+        </div>
+        <div class="codingSkillsContainer">
+            <h3>Coding Skills</h3>
+            <div class="codingSkills">
+                <picture><img src="html-icon.png">
+                    <p>HTML5</p></picture>
+                <picture><img src="css-icon.png">
+                    <p>CSS3</p></picture>
+                <picture><img src="javascript-icon.png">
+                    <p>Javascript</p></picture>
 
-                </div>
             </div>
         </div>
     </main>
@@ -97,25 +88,25 @@
     <div class="portfolio">
         <div class="project" id="tribute-page">
             <h2>Tribute Page</h2>
-            <div class="pic"><img src="tribute-page-pic.jpg"></div>
+            <div class="pic"></div>
             <div class="description"></div>
             <div class="links"></div>
         </div>
         <div class="project" id="product-landing-page">
             <h2>Product Landing Page</h2>
-            <div class="pic"><img src="product-landing-page-pic.jpg"></div>
+            <div class="pic"></div>
             <div class="description"></div>
             <div class="links"></div>
         </div>
         <div class="project" id="survey-form">
             <h2>Survey Form</h2>
-            <div class="pic"><img src="survey-form-pic.jpg"></div>
+            <div class="pic"></div>
             <div class="description"></div>
             <div class="links"></div>
         </div>
         <div class="project" id="technical-documentation-page">
             <h2>Technical Documentation Page</h2>
-            <div class="pic"><img src="technical-documentation-page-pic.jpg"></div>
+            <div class="pic"></div>
             <div class="description"></div>
             <div class="links"></div>
         </div>
@@ -143,7 +134,7 @@
             <div class="description"></div>
             <div class="links"></div>
         </div>
-        <div class="project">
+        <div class="project" id="twitch-tv-channel-filters">
             <h2>Twitch TV Channel Filter</h2>
             <div class="pic"></div>
             <div class="description"></div>
@@ -171,7 +162,9 @@
 </div>
 
 <script>
-    $(function () { $("[data-toggle='tooltip']").tooltip(); });
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
 </script>
 
 

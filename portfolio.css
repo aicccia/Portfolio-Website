@@ -3,10 +3,9 @@ body {
     box-sizing: border-box;
     font-family: Consolas, "Lucida Console", monospace;
     font-size: 12px;
-    background: lightblue url("Atlanta-Pic.jpg") no-repeat fixed;
-    background-size: cover;
     position: relative;
     height: 100%;
+    background-color: #46B4B0;
 }
 
 .portfolioContainer {
@@ -14,54 +13,29 @@ body {
     margin: 0 auto;
 }
 
- div, img {
-    border-radius: 5px;
-}
-
-
 /*=================================
 Bio Styles
 ==================================*/
 
+
+
 main {
     position: fixed;
-    height: 890px;
-    width: 620px;
-    background-color: hsl(171,100%,45%);
-    border: 2px solid grey;
+    height: 750px;
+    width: 600px;
+    background-color: #FFA863;
     padding: 10px;
-    top: 50%;
+    top: 45%;
     transform: translate(0, -50%);
     margin-left: 20px;
-    border-radius: 5px;
+    box-shadow: 0 6px 20px black;
+    z-index: -1;
 }
 
 
-.bio {
-    padding: 30px 30px 0 30px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.bio-pic img {
-    width: 250px;
-    border: 2px solid white;
-    margin-left: 20px;
-    border-radius: 15%;
-}
-
-.contactContainer {
-    margin: 20px 0 0 40px;
-}
-.bio-contact {
-    padding: 20px;
-    width: 200px;
-    height: auto;
-    background-color: hsl(0, 0%, 84%);
-    border-radius: 5px;
-    border: 2px solid white;
+.main h1, .main h2 {
     text-align: center;
+    margin: 0 auto;
 }
 
 .codingSkillsContainer h3,
@@ -74,6 +48,33 @@ main {
     padding: 0;
 }
 
+.bio-textContainer {
+    margin: 25px auto;
+    width: 530px;
+}
+
+.bio-text {
+    background-color: #f0f0f0;
+    padding: 35px;
+}
+
+
+.contactContainer {
+    width: 500px;
+    margin: 20px auto;
+}
+.bio-contact {
+    padding: 20px;
+    background-color: #F0F0F0;
+    text-align: center;
+}
+
+.bio-contact li {
+    display: inline;
+    font-size: 15px;
+    font-weight: 700;
+}
+
 .codingSkillsContainer {
     margin: 0 auto;
     width: 530px;
@@ -82,10 +83,8 @@ main {
 .codingSkills {
     display: flex;
     justify-content: space-around;
-    background-color: lightgrey;
+    background-color: #F0F0F0;
     padding: 30px 0;
-    border-radius: 5px;
-    border: 2px solid white;
 }
 
 .codingSkills p {
@@ -93,26 +92,12 @@ main {
     margin-top: 5px;
     font-weight: 600;
 }
+
 .codingSkills img {
     width: 75px;
 }
 
-li {
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-weight: 700;
-}
 
-.bio-textContainer {
-    margin: 25px auto;
-}
-
-.bio-text {
-    background-color: lightgray;
-    padding: 35px;
-    border: 2px solid white;
-    width: 530px;
-}
 
 
 
@@ -121,12 +106,12 @@ Menu Styles
 ===================================*/
 #menuSpy {
     width: 250px;
-    background-color: hsl(171,100%,45%);
+    background-color: #62acff;
     position: fixed;
-    margin-left: 670px;
-    top: 50%;
+    margin-left: 690px;
+    top: 45%;
     transform: translate(0, -50%);
-    border: 2px solid grey;
+    box-shadow: 0 6px 20px black;
 }
 
 
@@ -174,17 +159,15 @@ Portfolio Styles
 
 .portfolio {
     width: 780px;
-    height: 1000px;
     margin-left: 920px;
-    padding-top: 25px;
+    margin-top: 250px;
 }
 
 .project {
     width: 700px;
-    height: 350px;
-    background-color: hsl(171,100%,45%);
-    border: 2px solid grey;
+    height: 650px;
     margin: 0 auto 50px auto;
+    position: relative;
 }
 
 .project h2 {
@@ -194,23 +177,26 @@ Portfolio Styles
     margin-top:10px;
 }
 .pic {
-    margin: 15px 0 0 25px;
-    float: left;
-}
-
-.project img {
-    height: 250px;
-    width: 250px;
-    border: 2px solid white;
-    border-radius: 15%;
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 2px 2px black;
 }
 
 .description {
-    height: 250px;
-    width: 360px;
-    margin: 25px 0 10px 300px;
-    background-color: lightgray;
-    border: 2px solid white;
+    height: 550px;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #FFA863;
+    box-shadow: 0 6px 20px black;
+
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: 50px;
 }
 
 /*======================================
