@@ -1,48 +1,88 @@
-body {
-    display: flex;
-    box-sizing: border-box;
-    font-family: Consolas, "Lucida Console", monospace;
-    font-size: 12px;
-    position: relative;
-    height: 100%;
-    background-color: #46B4B0;
+html {
+    font-size: 62.5%;
 }
 
-.portfolioContainer {
-    width: 1600px;
-    margin: 0 auto;
+body {
+    box-sizing: border-box;
+    font-family: Garamond, "Times New Roman";
+    font-size: 1.2rem;
+    position: relative;
+    height: 100%;
+    background-color: #ADD8E6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #99b6ae;
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    box-shadow: 0 0 25px 6px black;
+}
+
+.bioContainer {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
 }
 
 /*=================================
 Bio Styles
 ==================================*/
 
-
-
 main {
-    position: fixed;
-    height: 750px;
-    width: 600px;
-    background-color: #FFA863;
-    padding: 10px;
-    top: 45%;
-    transform: translate(0, -50%);
-    margin-left: 20px;
-    box-shadow: 0 6px 20px black;
-    z-index: -1;
+    height: 85%;
+    width: calc(75% - 300px);
+    min-width: 600px;
+    max-width: 1000px;
+    background-color: #95D9C3;
+    box-shadow: 2px 2px 60px 5px black;
+    margin-left: calc((100% - 150px) * 0.5);
 }
 
+#shadowShallow {
+    width: 100%;
+    height: 6%;
+    box-shadow: 0 0 2px 1px black;
+}
+
+#cover {
+    background-color: #95D9C3;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+}
 
 .main h1, .main h2 {
     text-align: center;
     margin: 0 auto;
 }
 
+.intro {
+    width: 80%;
+    background-color: #5C6F68;
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    border: 1px solid white;
+    font-family: Garamond;
+}
+
+.intro h1 {
+    font-weight: 600;
+}
+
 .codingSkillsContainer h3,
 .contactContainer h3,
 .bio-textContainer h3 {
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -54,10 +94,12 @@ main {
 }
 
 .bio-text {
-    background-color: #f0f0f0;
+    background-color: #1EFFBC;
     padding: 35px;
+    border: 1px solid white;
+    font-size: 1.7rem;
+    color: black;
 }
-
 
 .contactContainer {
     width: 500px;
@@ -65,14 +107,16 @@ main {
 }
 .bio-contact {
     padding: 20px;
-    background-color: #F0F0F0;
+    background-color: #1EFFBC;
     text-align: center;
+    border: 1px solid white;
 }
 
 .bio-contact li {
     display: inline;
-    font-size: 15px;
+    font-size: 1.8rem;
     font-weight: 700;
+    margin-right: 30px;
 }
 
 .codingSkillsContainer {
@@ -83,14 +127,16 @@ main {
 .codingSkills {
     display: flex;
     justify-content: space-around;
-    background-color: #F0F0F0;
+    background-color: #1EFFBC;
     padding: 30px 0;
+    border: 1px solid white;
 }
 
 .codingSkills p {
     text-align: center;
     margin-top: 5px;
     font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .codingSkills img {
@@ -98,56 +144,87 @@ main {
 }
 
 
-
-
-
 /*=================================
 Menu Styles
 ===================================*/
+#topLeftBlock {
+    width: 30%;
+    min-width: 300px;
+    height: 8%;
+    background-color: #99b6ae;
+    float: left;
+    color: #95D9C3;
+    display: block;
+}
+
+
+
 #menuSpy {
-    width: 250px;
-    background-color: #62acff;
-    position: fixed;
-    margin-left: 690px;
-    top: 45%;
-    transform: translate(0, -50%);
-    box-shadow: 0 6px 20px black;
+    width: 30%;
+    min-width: 300px;
+    height: 95%;
+    float: left;
+    clear: both;
+    position: absolute;
+    top: 65px;
+    background-color: #99b6ae;
+    box-shadow: 0 0 25px 6px black;
+    color: #95D9C3;
+    z-index: -5;
+}
+
+.menuContainer {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-20%);
+
+}
+
+.category {
+    width: 85%;
+    background-color: whitesmoke;
+    margin: 30px auto;
+    padding: 10px 0;
+    box-shadow: 2px 2px 6px black;
 }
 
 
 .menu h2 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
     color: black;
     text-align: center;
 }
 
 .menu h3 {
-    font-size: 15px;
+    font-size: 2rem;
     font-weight: 700;
-    text-decoration: underline;
     text-align: center;
+    color: black;
 }
 
 .menu ul {
-    font-family: Garamond, "Times New Roman";
     text-align: left;
+    color: black;
 }
 
 .menu li {
     font-weight: 400;
     cursor: pointer;
     height: 30px;
-
+    color: black;
 }
 
 .menu a {
     text-decoration: none;
     color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .menu a:hover, .menu ul:hover {
-    color: #bb7200;
+    color: black;
     transition: color 0.1s;
 }
 
@@ -158,40 +235,43 @@ Portfolio Styles
 ==================================*/
 
 .portfolio {
-    width: 780px;
-    margin-left: 920px;
-    margin-top: 250px;
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 50%;
+    z-index: -3;
 }
 
 .project {
-    width: 700px;
+    width: 85%;
+    min-width: 550px;
+    max-width: 1000px;
     height: 650px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 75px auto;
     position: relative;
 }
 
 .project h2 {
     text-align: center;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 2.2rem;
     margin-top:10px;
 }
 .pic {
     height: 300px;
-    width: 80%;
+    width: 500px;
     margin: 0 auto;
     background-color: whitesmoke;
     z-index: 2;
     position: relative;
-    box-shadow: 0px 2px 2px black;
+    box-shadow: 2px 2px 20px 2px black;
 }
 
 .description {
     height: 550px;
     width: 85%;
     margin: 0 auto;
-    background-color: #FFA863;
-    box-shadow: 0 6px 20px black;
+    background-color: #90ee90;
+    box-shadow: 2px 2px 6px 4px black;
 
     position: absolute;
     z-index: 1;
@@ -202,24 +282,43 @@ Portfolio Styles
 /*======================================
 Media Queries
  ====================================*/
-
-@media screen  and (max-width: 1600px) {
-    .menu
-        { display: none; }
+@media screen and (max-width: 1900px) {
     .portfolio {
-        margin-left: 650px;
+        margin-left: 52%;
     }
 }
 
+@media screen and (max-width: 1800px) {
+    .portfolio {
+        margin-left: 54%;
+    }
+}
+
+
+@media screen  and (max-width: 1700px) {
+    main {
+        margin-left: 10%;
+    }
+
+    .menu, #topLeftBlock {
+        display: none;
+    }
+
+    .portfolio {
+        margin-left: 40%;
+    }
+
+
+}
+
 @media screen and (max-width: 1450px) {
-    .portfolioContainer {
+    .bioContainer {
         display: flex;
         flex-wrap: wrap;
+        position: static;
     }
 
     main {
-        width: 680px;
-        top: 0;
         transform: none;
         margin: 0 auto;
         position: static;
