@@ -10,11 +10,11 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="portfolio.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body data-spy="scroll" data-target="#menuSpy" data-offset="200">
@@ -141,6 +141,48 @@
 </div>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script>
+    $(window).load(function () {
+        var descriptionSizeMulti = 1.6;
+        var imageShiftPercen = 0.35;
+        var imageHeight = parseFloat($('.portfolio img').css('height'));
+
+        var newDescripHeight = (imageHeight * descriptionSizeMulti) + "px";
+        var newProjectHeight = (parseInt(newDescripHeight) + (imageHeight * imageShiftPercen) + parseInt($('.portfolio h2').css('height'))) + "px";
+
+        $("head").append('<style type="text/css"></style>');
+        var newStyleElement = $("head").children(':last');
+        newStyleElement.html('' +
+            '.description { ' +
+            'height:' + newDescripHeight + ';' +
+            '}' +
+            '.project {' +
+            'height:' + newProjectHeight + ';' +
+            '}');
+
+    });
+
+    $(window).resize(function () {
+        var descriptionSizeMulti = 1.6;
+        var imageShiftPercen = 0.35;
+        var imageHeight = parseFloat($('.portfolio img').css('height'));
+
+        var newDescripHeight = (imageHeight * descriptionSizeMulti) + "px";
+        var newProjectHeight = (parseInt(newDescripHeight) + (imageHeight * imageShiftPercen) + parseInt($('.portfolio h2').css('height'))) + "px";
+
+        var newStyleElement = $("head").children(':last');
+        newStyleElement.html('' +
+            '.description { ' +
+            'height:' + newDescripHeight + ';' +
+            '}' +
+            '.project {' +
+            'height:' + newProjectHeight + ';' +
+            '}');
+
+    });
+
+
+</script>
 
 </body>
 

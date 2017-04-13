@@ -18,7 +18,7 @@ body {
 header {
     background-color: lightblue;
     width: 100%;
-    height: 5% ;
+    height: 4vw;
     position: fixed;
     box-shadow: 0 0 25px 6px black;
 }
@@ -32,16 +32,10 @@ Menu Styles
     position: fixed;
 }
 
-@media screen and (max-width: 1600px) {
-    .menuContainer {
-        display: none;
-    }
-}
 
 #topLeftBlock {
-    width: 17vw;
-    height: calc(5% + 50px);
-    min-height: 75px;
+    width: 15vw;
+    height: calc(5vw + 50px);
     background-color: lightblue;
     position: fixed;
     top: 0;
@@ -50,10 +44,9 @@ Menu Styles
 }
 
 #menuSpy {
-    width: 17vw;
-    min-width: 300px;
+    width: 15vw;
     height: 100%;
-    margin-top: 5vh;
+    margin-top: 4.6vw;
     padding-top: 10vh;
     box-shadow: 0 0 25px 6px black;
     background-color: lightblue;
@@ -65,7 +58,6 @@ Menu Styles
     height: auto;
     background-color: whitesmoke;
     margin: 30px auto;
-    padding: 10px 0;
     box-shadow: 1px 0 10px 1px black;
     border: 1px solid black;
 
@@ -84,7 +76,7 @@ Menu Styles
 .menu li {
     font-weight: 400;
     cursor: pointer;
-    height: 3vh;
+    margin-bottom: 1vh;
 }
 
 .menu a {
@@ -94,16 +86,28 @@ Menu Styles
     color: black;
 }
 
+.nav li a {
+    padding:0 1vw;
+}
+
+.nav-pills li a {
+    border-radius: 0;
+}
+
+.nav-stacked>li+li {
+    margin-top: 0;
+}
+
 
 /*=================================
 Bio Styles
 ==================================*/
 
 main {
-    width: 35vw;
+    width: 25vw;
     height: auto;
     background: #ffe1b7;
-    margin-left: 22vw;
+    margin-left: 19vw;
     box-shadow: 8px 0 60px 6px black;
     border-right: 2px solid black;
     border-left: 2px solid black;
@@ -114,12 +118,6 @@ main {
     left: 0;
 }
 
-@media screen and (max-width: 1600px) {
-    main {
-        margin-left: 12vw;
-    }
-}
-
 .main h1, .main h2, .main h3 {
     text-align: center;
     margin: 0 auto;
@@ -127,9 +125,8 @@ main {
 
 .intro {
     width: auto;
-    height: 20%;
+    height: 12vh;
     margin-top: 20vh;
-    padding: 1.5vh;
     background-color: lightblue;
     color: black;
     font-family: Garamond;
@@ -143,16 +140,13 @@ main {
 
 .intro h1 {
     font-weight: 600;
-    font-size: 2.7rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
 }
 
 .intro h2 {
-    font-size: 1.7rem;
-}
-
-.intro h3 {
-    font-size: 1.1rem;
-    color: #484848;
+    font-size: 1.3rem;
+    line-height: 1rem;
 }
 
 .bioGroup {
@@ -163,16 +157,16 @@ main {
 
 .bio-text {
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
     height: 40%;
-    padding: 4%;
-    font-size: 1.1rem;
+    padding-top: 4%;
+    font-size: .9rem;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .codingSkills {
-    width: 90%;
+    width: 95%;
     height: 40%;
     padding-top: 10px;
     margin: 2% auto;
@@ -210,30 +204,25 @@ Portfolio Styles
 
 .portfolio {
     margin-top: 8%;
-    margin-left: 61vw;
+    margin-left: 55vw;
     z-index: -3;
 }
 
-@media screen and (max-width: 1600px) {
-    .portfolio {
-        margin-left: 52vw;
-    }
-}
 
 
 .project {
     width: 35vw;
-    height: 60vh;
+    height: 800px;
     position: relative;
-    margin-bottom: 5vh;
+    margin-bottom: 4rem;
+
 }
 
 .project h2 {
-    height: 3vh;
+    height: 2rem;
     text-align: center;
     font-weight: 600;
     font-size: 1.1rem;
-    margin-top: 1vh;
     font-family: "Courier New";
 }
 
@@ -257,8 +246,106 @@ Portfolio Styles
     box-shadow: 2px 0 20px 3px black;
     position: absolute;
     z-index: 1;
-    top: 20%;
+    bottom: 0;
     border: 1px solid black;
+}
+
+/*=========================
+Media Queries
+ ===========================*/
+
+@media screen and (max-width: 1600px) {
+    .portfolio {
+        margin-left: 52vw;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menuContainer {
+        display: none;
+    }
+
+    main {
+        width: 35vw;
+        margin-left: 5vw;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .bio-text {
+        width: 85%;
+        font-size: 1.3rem;
+
+    }
+
+    .portfolio {
+        margin-left: 48vw;
+    }
+
+    .project {
+        width: 45vw;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 90vw;
+        margin-left: 5vw;
+        position: static;
+    }
+
+    .intro {
+        height: 10vh;
+        margin-top: 6vh;
+    }
+
+    .intro h1 {
+        font-size: 4rem;
+    }
+
+    .intro h2 {
+        font-size: 3rem;
+    }
+
+    .bio-text {
+        width: 80%;
+        font-size: 2.5rem;
+    }
+
+    .codingSkills {
+        width: 80%;
+        padding-top: 0;
+    }
+
+    .codingSkills p {
+        font-size: 1.5rem;
+    }
+
+    .codingSkills img {
+        width: 8vw;
+    }
+
+    .portfolio {
+        margin-left: 5vw;
+    }
+
+    .project {
+        width: 90vw;
+        margin-bottom: 12rem;
+    }
+
+    .project h2 {
+        height: 6rem;
+        font-size: 4rem;
+    }
+
 }
 
 
