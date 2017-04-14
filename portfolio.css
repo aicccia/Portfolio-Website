@@ -16,11 +16,10 @@ body {
 }
 
 header {
-    background-color: lightblue;
+    background-color: #c4cdf8;
     width: 100%;
     height: 3vw;
     position: fixed;
-    border-bottom: 1px solid white;
     z-index: 1;
 }
 
@@ -114,42 +113,30 @@ Menu Styles
     position: fixed;
 }
 
-
-#topLeftBlock {
-    width: 15vw;
-    height: calc(5vw + 50px);
-    background-color: lightblue;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    border-right: 1px solid white;
-}
-
 #menuSpy {
+    padding-top: 3vw;
     width: 15vw;
     height: 100%;
-    margin-top: 4.6vw;
-    padding-top: 10vh;
-    background-color: lightblue;
+    background-color: #c4cdf8;
     z-index: -5;
     border-right: 1px solid white;
-}
-
-.category {
-    padding-top: 1vh;
-    width: 85%;
-    height: auto;
-    background-color: white;
-    margin: 3vh auto;
+    color: black;
+    font-family: Calibri;
 }
 
 .menu h3 {
+    height: 2.5vw;
+    line-height: 2.5vw;
+    font-family: Georgia;
+    letter-spacing: .1vw;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
-    margin: 1.5vh auto;
+    border-bottom: 1px solid grey;
+    background-color: #949dc8;
+
 }
+
 
 .menu ul {
     text-align: left;
@@ -158,15 +145,16 @@ Menu Styles
 .menu li {
     font-weight: 400;
     cursor: pointer;
-    margin-bottom: 1vh;
-    height: 3vh;
+    border-bottom: 1px solid grey;
 }
 
 .menu a {
     text-decoration: none;
-    font-weight: 600;
     font-size: 0.8rem;
+    height: 2vw;
+    line-height: 2vw;
     color: black;
+    border-left: .4vw solid transparent;
 }
 
 .nav li a {
@@ -179,6 +167,26 @@ Menu Styles
 
 .nav-stacked>li+li {
     margin-top: 0;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #949dc8;
+    border-left: .4vw solid #c5724f;
+    transition: all 0.5s;
+}
+
+.menu i {
+    color: black;
+}
+
+.menu .right  {
+    float: right;
+    line-height: 2vw;
+}
+
+.menu li:hover .right {
+    color: #c5724f;
+    transition: all 0.5s;
 }
 
 
@@ -208,7 +216,7 @@ main {
     width: auto;
     height: 12vh;
     margin-top: 20vh;
-    background-color: lightblue;
+    background-color: #c4cdf8;
     color: black;
     font-family: Garamond;
     display: flex;
