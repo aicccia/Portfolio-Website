@@ -10,13 +10,13 @@ body {
     font-size: 1.2rem;
     position: relative;
     height: 100%;
-    background: #E9EBEE;
+    background: #f4f6f9;
     display: flex;
     flex-wrap: wrap;
 }
 
 header {
-    background-color: #c4cdf8;
+    background-color: #0082CA;
     width: 100%;
     height: 3vw;
     position: fixed;
@@ -24,7 +24,7 @@ header {
 }
 
 .links {
-    width: 25vw;
+    width: 27vw;
     height: 3vw;
     display: flex;
     justify-content: space-around;
@@ -37,71 +37,36 @@ header {
 }
 
 @keyframes slideIn {
-    0% {
+    from {
         margin-right: -400px;
     }
 
-    100% {
+    to {
         margin-right: 100px;
     }
 }
 
-header button {
-    width: 7vw;
+.links a {
+    width: 8vw;
     height: 2vw;
     font-size: .7rem;
     color: white;
-    font-family: Arial;
-    text-transform: uppercase;
     letter-spacing: 0.08rem;
-    outline: none;
-    border: none;
-    border-radius: 0.2vw;
     line-height: 2vw;
-}
-
-#linkedin, #github, #message {
-    box-shadow: 0 4px 3px 0 darkgrey;
-}
-
-#linkedin:hover, #github:hover, #message:hover {
-    box-shadow: 0 8px 6px 0 darkgrey;
-}
-
-#linkedin {
-    background-color: #0082CA;
-}
-
-#linkedin:hover {
-    background-color: #0092db;
-}
-
-i {
-    color: white;
-}
-
-
-#github {
+    border-radius: 0.2vw;
+    font-family: Arial;
+    cursor: hand;
+    text-align: center;
+    text-decoration: none;
     background-color: #C61118;
 }
 
-#github:hover {
-    background-color: #ff1118;
+.links a:hover {
+    background-color: #ff141c;
 }
 
-#message {
-    background-color: #d57f53;
-}
-
-#message:hover {
-    background-color: #ffa357;
-}
-
-
-.container-fluid {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+header i {
+    color: white;
 }
 
 /*=================================
@@ -111,30 +76,34 @@ Menu Styles
     width: auto;
     height: 100%;
     position: fixed;
+
 }
 
 #menuSpy {
     padding-top: 3vw;
-    width: 15vw;
+    width: 16vw;
     height: 100%;
-    background-color: #c4cdf8;
+    background-color: #0082CA;
     z-index: -5;
-    border-right: 1px solid white;
-    color: black;
+    color: white;
     font-family: Calibri;
 }
 
 .menu h3 {
-    height: 2.5vw;
-    line-height: 2.5vw;
+    height: 2vw;
+    line-height: 2vw;
     font-family: Georgia;
-    letter-spacing: .1vw;
     font-size: 1.1rem;
     font-weight: 500;
-    text-align: center;
-    border-bottom: 1px solid grey;
-    background-color: #949dc8;
+    text-align: left;
+    padding-left: .5vw;
+    border-bottom: 1px solid #C61118;
+    border-top: 1px solid #C61118;
+    background-color: #C61118;
+}
 
+.menu h3:first-of-type {
+    border-top: 2px solid #C61118;
 }
 
 
@@ -145,7 +114,12 @@ Menu Styles
 .menu li {
     font-weight: 400;
     cursor: pointer;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #C61118;
+    border-top: 1px solid #C61118;
+}
+
+.second-list li:last-of-type {
+    border-bottom: 2px solid #C61118;
 }
 
 .menu a {
@@ -153,7 +127,7 @@ Menu Styles
     font-size: 0.8rem;
     height: 2vw;
     line-height: 2vw;
-    color: black;
+    color: white;
     border-left: .4vw solid transparent;
 }
 
@@ -169,25 +143,62 @@ Menu Styles
     margin-top: 0;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: #949dc8;
-    border-left: .4vw solid #c5724f;
+
+.nav-pills li.active a,
+.nav-pills li.active a:focus,
+.nav-pills li.active a:hover  {
+    background-color: #c4cdf8;
+    border-left: .4vw solid #C61118;
+    color: black;
     transition: all 0.5s;
 }
 
-.menu i {
+.nav-pills>li.active .right,
+.nav-pills>li.active .fa-angle-double-right {
     color: black;
+    transition: all 0.5s;
+}
+
+.menu li:hover .right,
+.menu li:hover .fa-angle-double-right {
+    color: black;
+    transition: all 0.5s;
+}
+
+.menu li:hover a {
+    border-left: .4vw solid #C61118;
+    background-color: #c4cdf8;
+    color: black;
+    transition: all 0.5s;
+}
+
+
+.menu i {
+    color: white;
 }
 
 .menu .right  {
     float: right;
     line-height: 2vw;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
-.menu li:hover .right {
-    color: #c5724f;
-    transition: all 0.5s;
+@keyframes appear {
+    from  {
+        opacity: 0;
+    }
+
+    to {
+         opacity: 1;
+    }
 }
+
+
+
 
 
 /*=================================
@@ -195,10 +206,10 @@ Bio Styles
 ==================================*/
 
 main {
-    width: 25vw;
+    width: 30vw;
     height: auto;
     background: #a6e2cf;
-    margin-left: 19vw;
+    margin-left: 21.3vw;
     box-shadow: 8px 0 60px 6px black;
     border-top: 1px solid transparent;
     position: fixed;
@@ -217,7 +228,6 @@ main {
     height: 12vh;
     margin-top: 20vh;
     background-color: #c4cdf8;
-    color: black;
     font-family: Garamond;
     display: flex;
     align-items: center;
@@ -245,13 +255,11 @@ main {
 }
 
 .bio-text {
-    margin: 0 auto;
+    margin: 6vh auto;
     width: 85%;
-    padding-top: 4%;
     font-size: .9rem;
     line-height: 1.1rem;
-    color: black;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .codingSkills {
@@ -291,11 +299,9 @@ Portfolio Styles
 
 .portfolio {
     margin-top: 8%;
-    margin-left: 55vw;
-    z-index: -3;
+    margin-left: 58vw;
+    z-index: 0;
 }
-
-
 
 .project {
     width: 35vw;
@@ -313,15 +319,13 @@ Portfolio Styles
     font-family: "Courier New";
 }
 
-
 .portfolio img {
     display: block;
     width: 80%;
     height: auto;
     margin: 0 auto;
-    z-index: 10;
+    z-index: 3;
     position: relative;
-    background-color: whitesmoke;
     box-shadow: 2px 0 20px 2px black;
 }
 
@@ -332,8 +336,47 @@ Portfolio Styles
     background: #c3ffec;
     box-shadow: 2px 0 20px 3px black;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     bottom: 0;
+}
+
+.linkPortfolio {
+    width: 80%;
+    height: 7%;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    margin: 5% auto;
+    z-index: 3;
+}
+
+.linkPortfolio a {
+    width: 25%;
+    height: 100%;
+    font-size: .8rem;
+    background-color: #008b00;
+    color: white;
+    border-radius: 0.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+.linkPortfolio a:hover {
+    background-color: #00a700;
+}
+
+.linkPortfolio i {
+    color: white;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
 }
 
 /*=========================
@@ -342,7 +385,7 @@ Media Queries
 
 @media screen and (max-width: 1600px) {
     .portfolio {
-        margin-left: 52vw;
+        margin-left: 58.5vw;
     }
 }
 
@@ -392,11 +435,11 @@ Media Queries
         margin-right:0;
     }
 
-    header button {
-        width: 25vw;
+    .links a {
+        width: 20vw;
         height: 8vh;
         font-size: 2.5rem;
-        border-radius: 10px;
+        border-radius: 1vw;
         line-height: 8vh;
     }
 
@@ -419,6 +462,7 @@ Media Queries
 
     .intro {
         height: 10vh;
+        min-height: 75px;
         margin-top: 15vh;
     }
 
@@ -464,6 +508,16 @@ Media Queries
     .project h2 {
         height: 6rem;
         font-size: 4rem;
+    }
+
+    .linkPortfolio {
+        height: 4vh;
+        min-height: 30px;
+    }
+
+    .project a {
+        border-radius: 1vw;
+        font-size: 2rem;
     }
 
 }
