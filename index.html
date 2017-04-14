@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>J. Nicholas Engleman's Portfolio</title>
-    <link rel="stylesheet" href="cssreset.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,11 +13,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/76022b8bf6.js"></script>
+
+    <link rel="stylesheet" href="cssreset.css">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body data-spy="scroll" data-target="#menuSpy" data-offset="200">
-<header></header>
+<header>
+    <div class="links">
+        <a href="https://www.linkedin.com/in/johnengleman/">
+            <button id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;LinkedIn</button>
+        </a>
+        <a href="https://github.com/aicccia">
+            <button id="github"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Github</button>
+        </a>
+        <a href="mailto:nicholas@englemaninvest.com?" target="_top"">
+        <button id="message"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Email Me</button>
+        </a>
+    </div>
+</header>
 <div class="menuContainer">
     <div id="topLeftBlock"></div>
     <div class="menu" id="menuSpy">
@@ -61,7 +75,7 @@
         <div class="bio-text"><p>I am not a web designer and I am also colorblind so if the design of this
             portfolio
             "offends" you, or "has ruined your day", or "brought back bad memories", I sincerely
-            apologize. </p>
+            apologize. </p><br>
             <p>That was not my intention.</p>
         </div>
         <div class="codingSkills">
@@ -72,7 +86,6 @@
             <picture><img src="javascript-icon.png">
                 <p>Javascript</p></picture>
         </div>
-
     </div>
 </main>
 
@@ -139,8 +152,7 @@
         <div class="description"></div>
     </div>
 </div>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 <script>
     $(window).load(function () {
         var descriptionSizeMulti = 1.6;
