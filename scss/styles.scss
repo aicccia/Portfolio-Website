@@ -1,0 +1,501 @@
+$header-menu-color: #79BCD9;
+$header-button-color: hsl(198, 54%, 43%);
+$header-button-pressed-color: hsl(198, 54%, 38%);
+$bio-color: #77DDBC;
+$description-color: #77DDBC;
+$description-button-color: hsl(160, 82%, 35%);
+$description-button-pressed-color: hsl(160, 82%, 30%);
+
+html {
+  font-size: 1vw;
+  color: black;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Garamond, "Times New Roman";
+  font-size: 1.2rem;
+  position: relative;
+  height: 100%;
+  background: #f4f6f9;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: $header-menu-color;
+  width: 100%;
+  height: 3vw;
+  position: fixed;
+  z-index: 1;
+}
+
+.links {
+  width: 27vw;
+  height: 3vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  float: right;
+  margin-right: 100px;
+  animation-name: slideIn;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    margin-right: -400px;
+  }
+  to {
+    margin-right: 100px;
+  }
+}
+
+.links a {
+  width: 8vw;
+  height: 2vw;
+  font-size: .7rem;
+  color: white;
+  letter-spacing: 0.08rem;
+  line-height: 2vw;
+  border-radius: 0.2vw;
+  font-family: Arial;
+  cursor: hand;
+  text-align: center;
+  text-decoration: none;
+  background-color: $header-button-color;
+  box-shadow: 0.35vh 0.35vh 0.35vh 0 black;
+}
+
+.links a:hover {
+  background-color: $header-button-pressed-color;
+  box-shadow: 0.25vh 0.25vh 0.25vh 0 black;
+
+}
+
+header i {
+  color: white;
+}
+
+
+/*=================================
+Menu Styles
+===================================*/
+
+.menuContainer {
+  width: auto;
+  height: 100%;
+  position: fixed;
+}
+
+#menuSpy {
+  padding-top: 3vw;
+  width: 16vw;
+  height: 100%;
+  background-color: #79BCD9;
+  z-index: -5;
+  color: black;
+  font-family: Calibri;
+}
+
+.menu h3 {
+  height: 2vw;
+  line-height: 2vw;
+  font-family: Georgia;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: left;
+  padding-left: .5vw;
+  border-bottom: 1px solid $header-button-color;
+  border-top: 1px solid $header-button-color;
+  background-color: $header-button-color;
+}
+
+.menu h3:first-of-type {
+  border-top: 2px solid $header-button-color;
+}
+
+.menu ul {
+  text-align: left;
+}
+
+.menu li {
+  font-weight: 400;
+  cursor: pointer;
+  border-bottom: 1px solid $header-button-color;
+  border-top: 1px solid $header-button-color;
+}
+
+.second-list li:last-of-type {
+  border-bottom: 2px solid $header-button-color;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  height: 2vw;
+  line-height: 2vw;
+  color: black;
+  border-left: .4vw solid transparent;
+}
+
+.nav li a {
+  padding: 0 1vw;
+}
+
+.nav-pills li a {
+  border-radius: 0;
+}
+
+.nav-stacked>li+li {
+  margin-top: 0;
+}
+
+.nav-pills li.active a,
+.nav-pills li.active a:focus,
+.nav-pills li.active a:hover {
+  background-color: $description-color;
+  border-left: .4vw solid $header-button-color;
+  color: black;
+  transition: all 0.5s;
+}
+
+.nav-pills>li.active .right,
+.nav-pills>li.active .fa-angle-double-right {
+  color: black;
+  transition: all 0.5s;
+}
+
+.menu li:hover .right,
+.menu li:hover .fa-angle-double-right {
+  color: black;
+  transition: all 0.5s;
+}
+
+.menu li:hover a {
+  border-left: .4vw solid $header-button-color;
+  background-color: $description-color;
+  color: black;
+  transition: all 0.5s;
+}
+
+.menu i {
+  color: black;
+}
+
+.menu .right {
+  float: right;
+  line-height: 2vw;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*=================================
+Bio Styles
+==================================*/
+
+main {
+  width: 25vw;
+  height: auto;
+  background: $bio-color;
+  margin-left: 21.3vw;
+  box-shadow: 8px 0 60px 6px black;
+  border-top: 1px solid transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main h1,
+.main h2,
+.main h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro {
+  width: auto;
+  height: 12vh;
+  margin-top: 20vh;
+  background-color: $header-menu-color;
+  font-family: Garamond;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.intro h2 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.bioGroup {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.bio-text {
+  margin: 6vh auto;
+  width: 85%;
+  font-size: .9rem;
+  line-height: 1.1rem;
+  font-weight: 600;
+}
+
+.codingSkills {
+  width: 95%;
+  margin: 4% auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.codingSkills p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.codingSkills img {
+  width: 4vw;
+  height: auto;
+  margin-bottom: 1vh;
+}
+
+.contactContainer {
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/*=================================
+Portfolio Styles
+==================================*/
+
+.portfolio {
+  margin-top: 8%;
+  margin-left: 53vw;
+  z-index: 0;
+}
+
+.project {
+  width: 40vw;
+  height: 800px;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.project h2 {
+  height: 2rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: "Courier New";
+}
+
+.portfolio img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  z-index: 3;
+  position: relative;
+  box-shadow: 2px 0 20px 2px black;
+}
+
+.description {
+  width: 100%;
+  height: 80%;
+  /*background: linear-gradient(to right bottom, #FFFAE1, #e3dec5);*/
+  background: $description-color;
+  box-shadow: 2px 0 20px 3px black;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+}
+
+.linkPortfolio {
+  width: 80%;
+  height: 7%;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  margin: 5% auto;
+  z-index: 3;
+}
+
+.linkPortfolio a {
+  width: 25%;
+  height: 100%;
+  font-size: .8rem;
+  background-color: $description-button-color;
+  color: white;
+  border-radius: 0.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0.35vh 0.35vh 0.35vh 0 black;
+}
+
+.linkPortfolio a:hover {
+  background-color: $description-button-pressed-color;
+  box-shadow: 0.25vh 0.25vh 0.25vh 0 black;
+}
+
+.linkPortfolio i {
+  color: white;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+
+/*=========================
+Media Queries
+ ===========================*/
+
+@media screen and (max-width: 1600px) {
+  .portfolio {
+    margin-left: 58.5vw;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .menuContainer {
+    display: none;
+  }
+  main {
+    width: 35vw;
+    margin-left: 5vw;
+  }
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+  .intro h2 {
+    font-size: 2rem;
+  }
+  .bio-text {
+    width: 85%;
+    font-size: 1.3rem;
+  }
+  .portfolio {
+    margin-left: 48vw;
+  }
+  .project {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 12vh;
+    z-index: 5;
+  }
+  .links {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+  }
+  .links a {
+    width: 20vw;
+    height: 8vh;
+    font-size: 2.5rem;
+    border-radius: 1vw;
+    line-height: 8vh;
+  }
+  @keyframes slideIn {
+    0% {
+      margin-right: -400px;
+    }
+    100% {
+      margin-right: 0;
+    }
+  }
+  main {
+    width: 90vw;
+    margin-left: 5vw;
+    position: static;
+  }
+  .intro {
+    height: 10vh;
+    min-height: 75px;
+    margin-top: 15vh;
+  }
+  .intro h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  .intro h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .bio-text {
+    width: 80%;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 3vh;
+  }
+  .codingSkills {
+    width: 80%;
+    padding-top: 0;
+  }
+  .codingSkills p {
+    font-size: 1.5rem;
+  }
+  .codingSkills img {
+    width: 8vw;
+  }
+  .portfolio {
+    margin-left: 5vw;
+  }
+  .project {
+    width: 90vw;
+    margin-bottom: 12rem;
+  }
+  .project h2 {
+    height: 6rem;
+    font-size: 4rem;
+  }
+  .linkPortfolio {
+    height: 4vh;
+    min-height: 30px;
+  }
+  .project a {
+    border-radius: 1vw;
+    font-size: 2rem;
+  }
+}
