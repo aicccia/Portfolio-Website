@@ -1,4 +1,3 @@
-
 html {
     font-size: 1vw;
     color: black;
@@ -16,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #0082CA;
+    background-color: #79BCD9;
     width: 100%;
     height: 3vw;
     position: fixed;
@@ -40,7 +39,6 @@ header {
     from {
         margin-right: -400px;
     }
-
     to {
         margin-right: 100px;
     }
@@ -50,7 +48,7 @@ header {
     width: 8vw;
     height: 2vw;
     font-size: .7rem;
-    color: white;
+    color: black;
     letter-spacing: 0.08rem;
     line-height: 2vw;
     border-radius: 0.2vw;
@@ -58,34 +56,37 @@ header {
     cursor: hand;
     text-align: center;
     text-decoration: none;
-    background-color: #C61118;
+    background-color: #3386AA;
+    box-shadow: 0.25vh 0.25vh 0.25vh 0 black;
 }
 
 .links a:hover {
-    background-color: #ff141c;
+    background-color: #157199;
+    box-shadow: 0.35vh 0.35vh 0.35vh 0 black;
 }
 
 header i {
-    color: white;
+    color: black;
 }
+
 
 /*=================================
 Menu Styles
 ===================================*/
+
 .menuContainer {
     width: auto;
     height: 100%;
     position: fixed;
-
 }
 
 #menuSpy {
     padding-top: 3vw;
     width: 16vw;
     height: 100%;
-    background-color: #0082CA;
+    background-color: #79BCD9;
     z-index: -5;
-    color: white;
+    color: black;
     font-family: Calibri;
 }
 
@@ -105,7 +106,6 @@ Menu Styles
 .menu h3:first-of-type {
     border-top: 2px solid #C61118;
 }
-
 
 .menu ul {
     text-align: left;
@@ -127,12 +127,12 @@ Menu Styles
     font-size: 0.8rem;
     height: 2vw;
     line-height: 2vw;
-    color: white;
+    color: black;
     border-left: .4vw solid transparent;
 }
 
 .nav li a {
-    padding:0 1vw;
+    padding: 0 1vw;
 }
 
 .nav-pills li a {
@@ -143,11 +143,10 @@ Menu Styles
     margin-top: 0;
 }
 
-
 .nav-pills li.active a,
 .nav-pills li.active a:focus,
-.nav-pills li.active a:hover  {
-    background-color: #c4cdf8;
+.nav-pills li.active a:hover {
+    background-color: #FFCFB7;
     border-left: .4vw solid #C61118;
     color: black;
     transition: all 0.5s;
@@ -167,17 +166,16 @@ Menu Styles
 
 .menu li:hover a {
     border-left: .4vw solid #C61118;
-    background-color: #c4cdf8;
+    background-color: #FFCFB7;
     color: black;
     transition: all 0.5s;
 }
 
-
 .menu i {
-    color: white;
+    color: black;
 }
 
-.menu .right  {
+.menu .right {
     float: right;
     line-height: 2vw;
     opacity: 0;
@@ -188,17 +186,13 @@ Menu Styles
 }
 
 @keyframes appear {
-    from  {
+    from {
         opacity: 0;
     }
-
     to {
-         opacity: 1;
+        opacity: 1;
     }
 }
-
-
-
 
 
 /*=================================
@@ -206,9 +200,9 @@ Bio Styles
 ==================================*/
 
 main {
-    width: 30vw;
+    width: 25vw;
     height: auto;
-    background: #a6e2cf;
+    background: #FFE7B7;
     margin-left: 21.3vw;
     box-shadow: 8px 0 60px 6px black;
     border-top: 1px solid transparent;
@@ -218,7 +212,9 @@ main {
     z-index: 1;
 }
 
-.main h1, .main h2, .main h3 {
+.main h1,
+.main h2,
+.main h3 {
     text-align: center;
     margin: 0 auto;
 }
@@ -233,8 +229,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-top: 1px solid darkgrey;
-    border-bottom: 1px solid darkgrey;
 }
 
 .intro h1 {
@@ -299,16 +293,15 @@ Portfolio Styles
 
 .portfolio {
     margin-top: 8%;
-    margin-left: 58vw;
+    margin-left: 53vw;
     z-index: 0;
 }
 
 .project {
-    width: 35vw;
+    width: 40vw;
     height: 800px;
     position: relative;
     margin-bottom: 4rem;
-
 }
 
 .project h2 {
@@ -330,10 +323,10 @@ Portfolio Styles
 }
 
 .description {
-    width:  100%;
+    width: 100%;
     height: 80%;
     /*background: linear-gradient(to right bottom, #FFFAE1, #e3dec5);*/
-    background: #c3ffec;
+    background: #FFCFB7;
     box-shadow: 2px 0 20px 3px black;
     position: absolute;
     z-index: 2;
@@ -361,8 +354,8 @@ Portfolio Styles
     align-items: center;
     justify-content: center;
     text-decoration: none;
-
 }
+
 .linkPortfolio a:hover {
     background-color: #00a700;
 }
@@ -379,6 +372,7 @@ Portfolio Styles
     float: right;
 }
 
+
 /*=========================
 Media Queries
  ===========================*/
@@ -393,48 +387,38 @@ Media Queries
     .menuContainer {
         display: none;
     }
-
     main {
         width: 35vw;
         margin-left: 5vw;
     }
-
     .intro h1 {
         font-size: 2.5rem;
     }
-
     .intro h2 {
         font-size: 2rem;
     }
-
     .bio-text {
         width: 85%;
         font-size: 1.3rem;
-
     }
-
     .portfolio {
         margin-left: 48vw;
     }
-
     .project {
         width: 45vw;
     }
 }
-
 
 @media screen and (max-width: 768px) {
     header {
         height: 12vh;
         z-index: 5;
     }
-
     .links {
         width: 100%;
         height: 100%;
-        margin-right:0;
+        margin-right: 0;
     }
-
     .links a {
         width: 20vw;
         height: 8vh;
@@ -442,88 +426,65 @@ Media Queries
         border-radius: 1vw;
         line-height: 8vh;
     }
-
-
     @keyframes slideIn {
         0% {
             margin-right: -400px;
         }
-
         100% {
             margin-right: 0;
         }
     }
-
     main {
         width: 90vw;
         margin-left: 5vw;
         position: static;
     }
-
     .intro {
         height: 10vh;
         min-height: 75px;
         margin-top: 15vh;
     }
-
     .intro h1 {
         font-size: 5rem;
         line-height: 6rem;
     }
-
     .intro h2 {
         font-size: 3rem;
         line-height: 4rem;
     }
-
     .bio-text {
         width: 80%;
         font-size: 2.5rem;
         line-height: 3.5rem;
         margin-bottom: 3vh;
     }
-
     .codingSkills {
         width: 80%;
         padding-top: 0;
     }
-
     .codingSkills p {
         font-size: 1.5rem;
     }
-
     .codingSkills img {
         width: 8vw;
     }
-
     .portfolio {
         margin-left: 5vw;
     }
-
     .project {
         width: 90vw;
         margin-bottom: 12rem;
     }
-
     .project h2 {
         height: 6rem;
         font-size: 4rem;
     }
-
     .linkPortfolio {
         height: 4vh;
         min-height: 30px;
     }
-
     .project a {
         border-radius: 1vw;
         font-size: 2rem;
     }
-
 }
-
-
-
-
-
-
